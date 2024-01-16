@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module-9 ReactJs-Intro</title>
+</head>
+
+<body>
+
+
+
+  <ol>
+    <hr class="hr" />
+    <li>What is React Js?</li>
+
+    <p>
+      <strong>ans:- </strong> <br />
+    <ul>
+      <li> The React.js framework is an open-source JavaScript framework and library developed by Facebook. </li>
+      <li> It's used for building interactive user interfaces and web applications quickly and efficiently with
+        significantly less code than you would with vanilla JavaScript.</li>
+    </ul>
+    </p>
+
+    <hr />
+
+    <li>What is NPM in React Js?</li>
+    <p>
+      <strong>ans:- </strong> <br />
+    <ul>
+      <li>It's a library and registry for JavaScript software packages.</li>
+      <li>"npm" stands for Node Package Manager.</li>
+      <li>
+        "npm" also has command-line tools to help you install the different
+        packages and manage their dependencies.
+      </li>
+    </ul>
+    </p>
+
+    <hr />
+
+    <li>What is Role of Node Js in react Js?</li>
+    <p><strong>ans:- </strong> <br />
+    <ul>
+      <li> Node is the most popular platform for hosting and running web servers for React apps. </li>
+      <li> After all, using NPM (Node Package Manager), you can install any package with NPM command-line interface CLI.
+      </li>
+      <li> Moreover, Node utilizes Webpack and other modules to turn a React application into an easily compilable
+        single file. </li>
+    </ul>
+    </p>
+
+    <hr />
+
+    <li>What is CLI command In React Js?</li>
+    <p><strong>ans:- </strong> <br />
+
+    <ul>
+
+      <li> Package managers like npm and yarn are distributed and ingested across multiple platforms. </li>
+      <li> We probably have used a CLI to install or configure software or automate repetitive tasks. </li>
+      <li> Command-line interfaces (CLIs) built-in Node.js authorize automating repetitive tasks while leveraging the
+        Node.js ecosystem. </li>
+      <li> We use the npm CLI (almost) every day in ReactJS/Javascript devolpment. </li>
+      <li> There are many use cases for building a CLI and knowing how to do that with our JavaScript and React. </li>
+    </ul>
+
+    </p>
+
+    <hr />
+
+    <li>What is Components in React Js?</li>
+    <p><strong>ans:- </strong> <br />
+    <ul>
+      <li> Components come in two types, Class components and Function components. </li>
+      <li> Components are independent and reusable bits of code. </li>
+      <li> They serve the same purpose as JavaScript functions, but work in isolation and return HTML. </li>
+    </ul>
+    </p>
+
+    <hr />
+
+    <li>What is Header and Content Components in React Js?</li>
+    <p><strong>ans:- </strong> <br />
+    <ul>
+      <li> Headers are compositions that extend standard navbar functionalities. </li>
+      <li> They contain additional components like a jumbotron, sub-navbar, or image covers. </li>
+      <li> Which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+      </li>
+    </ul>
+    </p>
+
+    <hr />
+
+    <li>
+      How to install React Js on Windows, Linux Operating System?
+    </li>
+    <p><strong>ans:- </strong> <br />
+    <h4>
+      Install React on Windows OS
+    </h4>
+    <ul>
+      <li>Step 1: Install Node.js installer for windows.</li>
+      Click on this <a href="https://nodejs.org/en">Link</a>. Here install the LTS (Long Time Support) version
+      <li>Step 2: Install React js in Windows</li>
+      <code>npx create-react-app my-app</code>
+      <li>Step 3: Create and Launch Your First React Application</li>
+      <code>create-react-app my-app</code> <br>
+      <code>cd my-app</code><br>
+      <code>npm start</code>
+    </ul>
+
+    <h4>
+      Install React on Linux OS
+    </h4>
+
+    <ul>
+      <li>Step 1: Install npm </li>
+      <code>sudo apt install npm</code>
+      <li>Step 2: Install create-react-app Utility </li>
+      <code>sudo npm -g install create-react-app</code>
+      <li>Step 3: Create and Launch Your First React Application</li>
+      <code>create-react-app my-app</code> <br>
+      <code>cd my-app</code><br>
+      <code>npm start</code>
+
+    </ul>
+
+    </p>
+
+    <hr />
+
+    <li>
+      How to Install NPM and How to check version of NPM?
+    </li>
+    <p><strong>ans:- </strong> <br />
+      After successfully installation of Node.js type "node -v" in command prompt to check version of NPM .
+    </p>
+
+    <hr />
+
+    <li>How to check version of React Js?</li>
+    <p><strong>ans:- </strong> <br />
+
+    <ol>
+      <h4>There are three way to check React JS version :- </h4>
+      <li>Using package.json file:</li>
+      <code>npx create-react-app name_of_the_app<br/>
+						After create app, We can found package.json file, and version is mentioned in this file.</code>
+      <li>Using the command line:</li>
+      <code>npm view react version</code>
+      <li>Using the version property of default import from React:</li>
+      <pre><code>
+	import React from 'react';
+ 
+		const App = () => {
+		  return &lt;h1&gt;
+		        We are currently using react version {React.version}
+		  &lt;/h1&gt;
+		}
+ 
+	export default App;
+</code></pre>
+    </ol>
+
+    </p>
+
+    <hr />
+
+    <li>How to change in components of React Js?</li>
+
+    <p><strong>ans:- </strong> <br />
+    <ul>
+      <li>A simple update of the state, from anywhere in the code, causes all the User Interface (UI) elements to be
+        re-rendered automatically.</li>
+      <li>React components automatically re-render whenever there is a change in their state or props.</li>
+      <li>However, there may be cases where the render() method depends on some other data.</li>
+    </ul>
+    </p>
+    <hr />
+
+    <li>How to Create a List View in React Js?</li>
+
+    <p><strong>ans:- </strong> <br />
+    <h4>The following section explains the required steps to build the simple ListView component with its basic usage in
+      step by step procedure.</h4>
+    <ul>
+      <li> Dependencies </li>
+      <li> Installation and Configuration </li>
+      <li> Adding Syncfusion packages </li>
+      <li> Adding ListView component </li>
+      <li> Adding CSS Reference </li>
+      <li> Bind dataSource </li>
+      <li> Running the application </li>
+    </ul>
+    </p>
+  </ol>
+</body>
+
+</html>
