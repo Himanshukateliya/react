@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 className='bg-info bg-gradient'> Explain Life cycle in Class Component and functional component with Hooks</h2>
+    <p>
+        In React, components are the building blocks of a user interface. There are two main types of components: class
+        components and functional components. Both types of components have lifecycle methods or hooks that allow you to
+        perform actions at different stages of the component's existence. In this response, I'll provide an overview of
+        the lifecycle methods for both class components and hooks for functional components. <br />
+        <br />
+        <b>Class Components:</b>
+        Class components in React have a set of lifecycle methods that are invoked at different points during the
+        component's life cycle. The lifecycle can be divided into three main phases: <br />
+        <br />
+        <b> Mounting:</b>
+        <br />
+        <b> constructor():</b> This is called when an instance of the component is being created. It is often used for
+        initializing state and binding event handlers.
+        <br />
+        <b> render():</b> This method is responsible for rendering the component. It must be implemented in every class
+        component.
+        <br />
+        <b> componentDidMount():</b> Invoked immediately after a component is inserted into the DOM. It's a good place
+        to perform side effects like network requests.
+        <br />
+        <br />
+        <b> Updating:</b>
+        <br />
+        shouldComponentUpdate(nextProps, nextState): This method is called before rendering when new props or state are
+        received. It allows you to control whether the component should update or not.
+        <br />
+        <b>render(): </b> The component is re-rendered.
+        <br />
+        componentDidUpdate(prevProps, prevState): Invoked immediately after updating occurs. It's a good place to
+        perform side effects based on the changed props or state.
+        <br />
+        <br />
+        <b> Unmounting:</b>
+        <br />
+        <b> componentWillUnmount(): </b> Invoked immediately before a component is unmounted and destroyed. It's a good
+        place to clean up resources or subscriptions.
+        <br />
+        <b> Functional Components with Hooks:</b>
+
+        Functional components can now use hooks to manage state and side effects, allowing them to have similar
+        lifecycle functionality. The key hooks are:
+        <br />
+        <br />
+        <b> Mounting:</b>
+        <br />
+        <b> useState:</b> Hook for adding state to functional components.
+        <br />
+        <b> useEffect</b> (() &#123; { /* effect */}, []): Hook for performing side effects in function components. The
+        empty dependency array [] ensures that the effect runs only once after the initial render, simulating
+        componentDidMount.
+        <br />
+        <br />
+        <b> Updating:</b>
+        <br />
+        <b> useState:</b> Continues to be used for managing state.
+        <br />
+        <b> useEffect</b>
+        (() &#123; { /* effect */}, [dependencies]): The effect runs when any of the dependencies change, simulating the
+        behavior of componentDidUpdate.
+        <br />
+        <br />
+        <b> Unmounting:</b>
+        <br />
+
+        {/* useEffect(() &#123; { return () &#123; { /* cleanup */}; }, []): The cleanup function inside useEffect will
+        be called when the component is unmounted, simulating the behavior of componentWillUnmount.
+    </p>
+    <br />
+</body>
+
+</html>
